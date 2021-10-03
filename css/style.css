@@ -102,7 +102,7 @@ body {
   padding: 0 20px;
 }
 .blog-part:not(:last-child) {
-  border-right: 2px solid black;
+  border-right: 0px solid black;
 }
 .blog-menu {
   font-size: 22px;
