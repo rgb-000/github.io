@@ -99,7 +99,7 @@ body {
 
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog {
         max-height: 90vh;
         grid-template-columns: 25% 70% 5%;
@@ -124,7 +124,7 @@ body {
         border-right: 0px solid black;
     }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1024px) {
     .blog-part {
         margin-top: 60vh;
         align: bottom;
@@ -147,7 +147,7 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog-menu {
         /*font-size: 1.6vw;*/
     }
@@ -166,7 +166,7 @@ body {
     margin-top: auto;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog-menu.mention {
     }
 }
@@ -177,7 +177,7 @@ body {
     position: relative;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog-menu.subscribe {
     }
 }
@@ -206,7 +206,7 @@ body {
     flex-direction: column;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog .is-menu {
         display: none;
     }
@@ -244,6 +244,7 @@ body {
         max-width: 100%;
         width: 100%;
         min-height: 424px;
+        min-width: 424px;
         box-shadow: 2px 2px pink;
     }
 
@@ -367,7 +368,7 @@ marquee {
     flex-shrink: 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     marquee {
         display: none;
     }
@@ -425,7 +426,7 @@ marquee span:before {
     letter-spacing: -1px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog-right-title-container {
         margin-top: 88px;
     }
