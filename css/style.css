@@ -96,6 +96,7 @@ body {
     width: 100%;
     padding: 4px 4px;
     position: relative;
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -114,12 +115,6 @@ body {
     }
 }
 
-@media screen and (max-width: 560px) {
-    .blog {
-        grid-template-columns: 100%;
-        max-width: 90vw;
-    }
-}
 
 .blog-part {
     padding: 0 20px;
@@ -230,6 +225,7 @@ body {
     -webkit-background-clip: text;
     background-size: 10% 10px;
     background-repeat: repeat;
+    pointer-events: none;
 }
 
 .blog-header {
@@ -266,7 +262,7 @@ body {
 
 @media screen and (max-width: 1260px) {
     .page-number {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -276,17 +272,11 @@ body {
     padding-bottom: 20px;
     color: black;
     font-size: 22px;
-    font-family: "Playfair Display",sans-serif
+    font-family: "Playfair Display",sans-serif;
+    pointer-events: none;
 }
 
-@media screen and (max-width: 560px) {
-    .small-title {
-        position: absolute;
-        top: 10px;
-        right: 24px;
-        border-bottom: 0;
-    }
-}
+
 
 .date {
     display: flex;
@@ -299,6 +289,7 @@ body {
     line-height: 1.2;
     margin: 8px 0 8px;
     color: black;
+    pointer-events: none;
 }
 
     .blog-article h2 span {
@@ -309,6 +300,7 @@ body {
     line-height: 1.5;
     margin: 14px 0;
     color: black;
+    pointer-events: none;
 }
 
 .blog-article a {
@@ -419,6 +411,7 @@ marquee span:before {
     font-size: 25px;
     color: black;
     font-family: "Playfair Display", serif;
+    pointer-events: none;
 }
 
 .blog-right-title-container {
@@ -443,6 +436,7 @@ marquee span:before {
     display: inline-flex;
     align-items: baseline;
     justify-content: space-between;
+    pointer-events: none;
 }
 
     .blog-title-date i {
@@ -478,11 +472,13 @@ marquee span:before {
 
 .blog-right-container + .blog-right-container {
     margin-top: 40px;
+    pointer-events: none;
 }
 
 .right-blog {
     display: flex;
     flex-direction: column;
+    pointer-events: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -526,6 +522,7 @@ marquee span:before {
     text-transform: uppercase;
     white-space: nowrap;
     position: absolute;
+    pointer-events: none;
 }
 
     .running-text i {
