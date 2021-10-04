@@ -45,6 +45,15 @@ body {
     height: 96vh;
 }
 
+
+.sol-logo {
+    height: 28px;
+    fill: none;
+    padding-top: 2px;
+    margin-bottom: -8px;
+    mix-blend-mode: darken;
+}
+
 @media screen and (max-width: 768px) {
     body {
         padding: 0;
