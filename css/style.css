@@ -49,7 +49,7 @@ body {
 .logo-twitter, .logo-discord {
     height: 28px;
     width: 28px;
-    margin-left:-6px;
+    margin-left: -6px;
     display: inline;
     pointer-events: none;
 }
@@ -79,13 +79,13 @@ body {
 
 
 
-    @media screen and (max-width: 768px) {
-        body {
-            padding: 0;
-        }
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
     }
+}
 
-    .title-effect {
+.title-effect {
     margin-top: 78px;
     margin-left: 200px;
     width: 694px;
@@ -104,14 +104,13 @@ body {
     max-width: 1350px;
     display: grid;
     height: 90vh;
-    max-height:880px;
+    max-height: 880px;
     overflow: hidden;
     grid-template-columns: 10% 20% 35% 30%;
     grid-template-rows: 100%;
     width: 100%;
     padding: 4px 4px;
     position: relative;
-
 }
 
 @media screen and (max-width: 1280px) {
@@ -141,10 +140,10 @@ body {
 
 @media screen and (max-width: 1280px) {
     .blog-part {
-        padding-top:0px;
+        padding-top: 0px;
         margin-top: 60vh;
-        padding-bottom:10px;
-        height:30vh;
+        padding-bottom: 10px;
+        height: 30vh;
         max-width: 65vw;
         margin-left: -64vw;
         bottom: 0;
@@ -240,13 +239,15 @@ body {
 .blog-header {
     display: flex;
     flex-direction: column;
-   
 }
 
 .blog-article {
     padding: 0 20px;
-    
 }
+
+    .blog-article i {
+        font-family: "Playfair Display", sans-serif;
+    }
 
     .blog-article img {
         border: 20px solid white;
@@ -271,7 +272,7 @@ body {
     font-family: "Space Grotesk", sans-serif;
     border-right: 2px solid cyan;
     white-space: nowrap;
-    line-height:30px;
+    line-height: 30px;
 }
 
 @media screen and (max-width: 1260px) {
@@ -284,9 +285,9 @@ body {
     border-bottom: 2px solid cyan;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    font-size:26px;
-    line-height:22px;
-    max-height:55px;
+    font-size: 26px;
+    line-height: 22px;
+    max-height: 55px;
     font-family: "Playfair Display",sans-serif;
     pointer-events: none;
 }
@@ -303,7 +304,6 @@ body {
     font-weight: 500;
     line-height: 1.2;
     margin: 8px 0 8px;
-    
     pointer-events: none;
 }
 
@@ -314,7 +314,6 @@ body {
 .blog-article p {
     line-height: 1.5;
     margin: 14px 0;
-   
     pointer-events: none;
 }
 
@@ -421,7 +420,7 @@ marquee {
 
 .blog-right-title {
     font-size: 26px;
-    line-height:22px;
+    line-height: 22px;
     font-family: "Playfair Display", serif;
     pointer-events: none;
 }
@@ -432,7 +431,7 @@ marquee {
     justify-content: space-between;
     border-bottom: 2px solid cyan;
     margin-bottom: 16px;
-    height:62px;
+    height: 62px;
     margin-top: 92px;
     letter-spacing: -1px;
 }
@@ -445,7 +444,6 @@ marquee {
     .blog-right {
         height: calc(100% - 0px);
     }
-
 }
 
 .blog-title-date {
@@ -575,7 +573,7 @@ marquee {
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
     padding: 0em 0em;
-    z-index:11000;
+    z-index: 11000;
 }
 
     .running-text--right i {
@@ -651,7 +649,7 @@ marquee {
     padding: 20px;
     text-align: center;
     margin-top: 36px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .circle-title {
