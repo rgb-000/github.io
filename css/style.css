@@ -250,11 +250,14 @@ body {
 
     .blog-article img {
         border: 20px solid white;
-        max-width: 100%;
-        width: 100%;
+        max-width: 424px;
+        width: 424px;
+        margin-bottom: 20px;
         min-height: 424px;
         min-width: 424px;
         box-shadow: 2px 2px cyan;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 .page-number {
