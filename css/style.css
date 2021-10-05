@@ -104,9 +104,9 @@ body {
     max-width: 1350px;
     display: grid;
     height: 90vh;
-    max-height: 960px;
+    max-height:880px;
     overflow: hidden;
-    grid-template-columns: 15% 20% 35% 30%;
+    grid-template-columns: 10% 20% 35% 30%;
     grid-template-rows: 100%;
     width: 100%;
     padding: 4px 4px;
@@ -635,3 +635,44 @@ marquee {
 }
 
 
+.circle {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #000001;
+    padding: 20px;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom:20px;
+}
+
+.circle-title {
+    font-size: 40px;
+    letter-spacing: -3px;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+@media screen and (max-width: 1030px) {
+    .circle-title {
+        display: none;
+    }
+}
+
+.circle-subtitle {
+    max-width: 30ch;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.circle-footer {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    letter-spacing: -1px;
+}
