@@ -45,6 +45,10 @@ body {
     color: cyan;
 }
 
+i {.blog-article {
+    padding: 0 20px;
+    
+}}
 
 .logo-twitter, .logo-discord {
     height: 28px;
@@ -245,7 +249,7 @@ body {
     padding: 0 20px;
 }
 
-    .blog-article i {
+i {
         font-family: "Playfair Display", sans-serif;
     }
 
