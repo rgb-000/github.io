@@ -70,6 +70,10 @@ i {.blog-article {
 }
 
 .logo-color {
+    -webkit-filter: invert(91%) sepia(65%) saturate(7462%) hue-rotate(94deg) brightness(111%) contrast(103%);
+    -moz-filter: invert(91%) sepia(65%) saturate(7462%) hue-rotate(94deg) brightness(111%) contrast(103%);
+    -ms-filter: invert(91%) sepia(65%) saturate(7462%) hue-rotate(94deg) brightness(111%) contrast(103%);
+    -o-filter: invert(91%) sepia(65%) saturate(7462%) hue-rotate(94deg) brightness(111%) contrast(103%);
     filter: invert(91%) sepia(65%) saturate(7462%) hue-rotate(94deg) brightness(111%) contrast(103%);
 }
 
