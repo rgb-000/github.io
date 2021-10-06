@@ -51,7 +51,7 @@ p {
 
 @media all and (orientation: portrait) {
     p {
-        font-size:medium;
+        font-size:large;
     }
 }
 
@@ -513,7 +513,7 @@ marquee {
 
 @media all and (orientation: portrait) {
     .blog-right-page-content {
-        font-size: medium;
+        font-size:large;
         margin-top: 12px;
         line-height: 1.4;
     }
