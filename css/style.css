@@ -45,6 +45,17 @@ body {
     color: cyan;
 }
 
+p {
+    font-size:15px;
+}
+
+@media all and (orientation: portrait) {
+    p {
+        font-size:medium;
+    }
+}
+
+
 i {.blog-article {
     padding: 0 20px;
     
@@ -65,9 +76,6 @@ i {.blog-article {
     pointer-events: none;
 }
 
-.logo-invert {
-    filter: invert(100);
-}
 
 /*
 .logo-color {
@@ -497,10 +505,18 @@ marquee {
     letter-spacing: -2px;
 }
 
-.blog-right-page-subtitle {
+.blog-right-page-content {
     font-size: 15px;
     margin-top: 12px;
     line-height: 1.4;
+}
+
+@media all and (orientation: portrait) {
+    .blog-right-page-content {
+        font-size: medium;
+        margin-top: 12px;
+        line-height: 1.4;
+    }
 }
 
 .blog-right-container + .blog-right-container {
