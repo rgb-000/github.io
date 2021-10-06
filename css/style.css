@@ -117,7 +117,7 @@ i {.blog-article {
     position: relative;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog {
         max-height: 90vh;
         grid-template-columns: 25% 70% 5%;
@@ -142,7 +142,7 @@ i {.blog-article {
         border-right: 0px solid cyan;
     }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog-part {
         padding-top: 0px;
         margin-top: 60vh;
@@ -165,7 +165,7 @@ i {.blog-article {
     align-items: center;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog-menu {
         /*font-size: 1.6vw;*/
     }
@@ -184,7 +184,7 @@ i {.blog-article {
     margin-top: auto;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog-menu.mention {
     }
 }
@@ -195,7 +195,7 @@ i {.blog-article {
     position: relative;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog-menu.subscribe {
     }
 }
@@ -224,7 +224,7 @@ i {.blog-article {
     flex-direction: column;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog .is-menu {
         display: none;
     }
@@ -264,6 +264,16 @@ i {
         margin-left: auto;
         margin-right: auto;
     }
+
+
+@media screen and (max-width: 1024px) {
+    .blog-article img {
+        max-width: none;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
 
 .page-number {
     display: flex;
@@ -383,7 +393,7 @@ marquee {
     flex-shrink: 0;*/
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     marquee {
         display: none;
     }
@@ -440,9 +450,9 @@ marquee {
     letter-spacing: -1px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
     .blog-right-title-container {
-        margin-top: 88px;
+        margin-top: 48px;
     }
 
     .blog-right {
@@ -483,7 +493,6 @@ marquee {
 }
 
 .blog-right-page-subtitle {
-    max-width: 33ch;
     font-size: 15px;
     margin-top: 12px;
     line-height: 1.4;
