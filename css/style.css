@@ -49,7 +49,7 @@ p {
     font-size:15px;
 }
 
-@media all and (orientation: portrait) {
+@media (max-width:1080px) and (orientation: portrait) {
     p {
         font-size:large;
     }
@@ -118,31 +118,36 @@ i {.blog-article {
 
 .blog {
     background-color: #000001;
-    max-width: 1350px;
+    max-width: 1200px;
     display: grid;
     height: 90vh;
     max-height: 880px;
     overflow: hidden;
-    grid-template-columns: 10% 20% 35% 30%;
+    grid-template-columns: 5% 20% 40% 30%;
     grid-template-rows: 100%;
     width: 100%;
     padding: 4px 4px;
     position: relative;
 }
 
-@media all and (orientation: portrait) {
+
+
+@media (max-width:1080px) and (orientation: portrait) {
     .blog {
         max-height: 90vh;
-        grid-template-columns: 25% 70% 5%;
-        max-width: 96vw;
+        grid-template-columns: 25% 60% 15%;
+        width: 100%;
+        max-width: 90vw;
     }
 }
 
+
+
 @media screen and (max-width: 768px) {
     .blog {
-        grid-template-columns: 25% 70% 5%;
+        grid-template-columns: 28% 70% 2%;
         width: 100%;
-        max-width: 90vw;
+        max-width: 95vw;
     }
 }
 
@@ -155,20 +160,37 @@ i {.blog-article {
         border-right: 0px solid cyan;
     }
 
-@media all and (orientation: portrait) {
+@media (max-width:1080px) and (orientation: portrait) {
     .blog-part {
         padding-top: 0px;
         margin-top: 60vh;
         padding-bottom: 10px;
         height: 30vh;
-        max-width: 65vw;
-        margin-left: -64vw;
+        max-width: 54.75vw;
+        margin-left: -52.75vw;
         bottom: 0;
         background: #000001;
         z-index: 10000;
         overflow-y: auto;
     }
 }
+
+@media (max-width:768px) and (orientation: portrait) {
+    .blog-part {
+        padding-top: 0px;
+        margin-top: 60vh;
+        padding-bottom: 10px;
+        height: 30vh;
+        max-width: 65.25vw;
+        margin-left: -64.75vw;
+        bottom: 0;
+        background: #000001;
+        z-index: 10000;
+        overflow-y: auto;
+    }
+}
+
+
 
 .blog-menu {
     font-size: 22px;
@@ -178,7 +200,7 @@ i {.blog-article {
     align-items: center;
 }
 
-@media all and (orientation: portrait) {
+@media (max-width:1080px) and (orientation: portrait) {
     .blog-menu {
         /*font-size: 1.6vw;*/
     }
@@ -197,7 +219,7 @@ i {.blog-article {
     margin-top: auto;
 }
 
-@media all and (orientation: portrait) {
+@media (max-width:1080px) and (orientation: portrait) {
     .blog-menu.mention {
     }
 }
@@ -208,7 +230,7 @@ i {.blog-article {
     position: relative;
 }
 
-@media all and (orientation: portrait) {
+@media (max-width:1080px) and (orientation: portrait) {
     .blog-menu.subscribe {
     }
 }
@@ -237,7 +259,7 @@ i {.blog-article {
     flex-direction: column;
 }
 
-@media all and (orientation: portrait) {
+@media (max-width:1080px) and (orientation: portrait) {
     .blog .is-menu {
         display: none;
     }
@@ -268,20 +290,17 @@ i {
 
     .blog-article img {
         border: 20px solid white;
-        max-width: 424px;
+        margin-top:10px;
         width: 424px;
         margin-bottom: 20px;
-        min-height: 424px;
-        min-width: 424px;
         box-shadow: 2px 2px cyan;
         margin-left: auto;
         margin-right: auto;
     }
 
 
-@media all and (orientation: portrait) {
+@media (max-width:1080px) and (orientation: portrait) {
     .blog-article img {
-        max-width: none;
         width: 100%;
         margin-bottom: 30px;
     }
@@ -293,7 +312,7 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    font-size: 18px;
+    font-size: 1em;
     text-align: left;
     font-weight: lighter;
     font-family: "Space Grotesk", sans-serif;
@@ -312,7 +331,7 @@ i {
     border-bottom: 2px solid cyan;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 22px;
     max-height: 55px;
     font-family: "Playfair Display",sans-serif;
@@ -327,7 +346,7 @@ i {
 }
 
 .blog-article h2 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 1.2;
     margin: 8px 0 8px;
@@ -406,7 +425,7 @@ marquee {
     flex-shrink: 0;*/
 }
 
-@media all and (orientation: portrait) {
+@media (max-width:1080px) and (orientation: portrait) {
     marquee {
         display: none;
     }
@@ -446,7 +465,7 @@ marquee {
         }
 
 .blog-right-title {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 22px;
     font-family: "Playfair Display", serif;
     pointer-events: none;
@@ -463,7 +482,7 @@ marquee {
     letter-spacing: -1px;
 }
 
-@media all and (orientation: portrait) {
+@media (max-width:1080px) and (orientation: portrait) {
     .blog-right-title-container {
         margin-top: 48px;
     }
@@ -515,7 +534,7 @@ marquee {
     line-height: 1.4;
 }
 
-@media all and (orientation: portrait) {
+@media (max-width:1080px) and (orientation: portrait) {
     .blog-right-page-content {
         font-size:large;
         margin-top: 12px;
@@ -691,7 +710,7 @@ marquee {
 }
 
 .circle-title {
-    font-size: 8vw;
+    font-size: xxx-large;
     letter-spacing: -3px;
     font-weight: 700;
     font-family: "Space Grotesk", sans-serif;
