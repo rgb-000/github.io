@@ -181,6 +181,21 @@ i {.blog-article {
         margin-top: 60vh;
         padding-bottom: 10px;
         height: 30vh;
+        max-width: 54.75vw;
+        margin-left: -52.75vw;
+        bottom: 0;
+        background: #000001;
+        z-index: 10000;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width:768px) and (orientation: portrait) {
+    .blog-part {
+        padding-top: 0px;
+        margin-top: 60vh;
+        padding-bottom: 10px;
+        height: 30vh;
         max-width: 65.25vw;
         margin-left: -64.75vw;
         bottom: 0;
