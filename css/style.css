@@ -1122,3 +1122,82 @@ marquee {
         -webkit-animation-delay: 0.75s;
         animation-delay: 0.75s;
     }
+
+
+
+
+
+    /*____________________scroll____________*/
+
+
+
+.external {
+    overflow: hidden;
+    height: 40vh;
+}
+
+.horizontal-scroll-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vh;
+    transform: rotate(-90deg) translate3d(0,-100vh,0);
+    transform-origin: right top;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    height: 40vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    padding-bottom: 0rem;
+}
+
+.img-wrapper {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transform-origin: 100% 100%;
+    transform: rotate(90deg) translateZ(.1px) scale(0.8) translateX(0px) translateY(10px);
+    transition: 1s;
+}
+
+
+
+.slower {
+    transform: rotate(90deg) translateZ(-.2px) scale(0.9) translateX(0%) translateY(0px);
+}
+
+.slower1 {
+    transform: rotate(90deg) translateZ(-.25px) scale(0.85) translateX(0%) translateY(10px);
+}
+
+.slower2 {
+    transform: rotate(90deg) translateZ(-.3px) scale(0.9) translateX(0%) translateY(20px);
+}
+
+.slower-down {
+    transform: rotate(90deg) translateZ(-.2px) scale(0.85) translateX(0%) translateY(10px);
+}
+
+.faster {
+    transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(50px);
+}
+
+.faster1 {
+    transform: rotate(90deg) translateZ(.05px) scale(0.9) translateX(0%) translateY(16px);
+}
+
+.fastest {
+    transform: rotate(90deg) translateZ(.22px) scale(0.8) translateX(-2vh) translateY(10px);
+}
+
+.vertical {
+    transform: rotate(90deg) translateZ(-.15px) scale(0.85) translateX(0%) translateY(8px);
+}
+
+.last {
+    transform: rotate(90deg) translateZ(-.2px) scale(0.9) translateX(2vh) translateY(20px);
+}
+
+
