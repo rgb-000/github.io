@@ -26,34 +26,42 @@ html {
     z-index: 0;
     color: red;
     transform: rotate(270deg);
-    /*
-  animation: runningLineX 10s infinite linear reverse;*/
-}
+    }
 
 body {
     background-color: #000001;
     display: flex;
+    font-size:16px;
     font-family: "Inter", sans-serif;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     z-index: 10;
-    padding: 0 2em;
+    padding: 0 1em;
     font-weight: 400;
     height: 96vh;
     color: cyan;
 }
 
 p {
-    font-size:15px;
+    font-size: 1.0em;
 }
 
-@media (max-width:1080px) and (orientation: portrait) {
-    p {
-        font-size:large;
+@media all and (orientation: portrait) {
+    body {
+        font-size: 24px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        font-size: 32px;
+    }
+}
+
 
 
 .blog-article i {
@@ -76,16 +84,6 @@ p {
 }
 
 
-/*
-.logo-color {
-    -webkit-filter: invert(91%) sepia(65%) saturate(7462%) hue-rotate(94deg) brightness(111%) contrast(103%);
-    -moz-filter: invert(91%) sepia(65%) saturate(7462%) hue-rotate(94deg) brightness(111%) contrast(103%);
-    -ms-filter: invert(91%) sepia(65%) saturate(7462%) hue-rotate(94deg) brightness(111%) contrast(103%);
-    -o-filter: invert(91%) sepia(65%) saturate(7462%) hue-rotate(94deg) brightness(111%) contrast(103%);
-    filter: invert(91%) sepia(65%) saturate(7462%) hue-rotate(94deg) brightness(111%) contrast(103%);
-}*/
-
-
 .logo-solana {
     height: 30px;
     padding-top: 2px;
@@ -95,11 +93,6 @@ p {
 
 
 
-@media screen and (max-width: 768px) {
-    body {
-        padding: 0;
-    }
-}
 
 .title-effect {
     margin-top: 78px;
@@ -131,24 +124,16 @@ p {
 
 
 
-@media (max-width:1080px) and (orientation: portrait) {
+@media all and (orientation: portrait) {
     .blog {
         max-height: 90vh;
-        grid-template-columns: 25% 60% 15%;
+        grid-template-columns: 40% 60% 0%;
         width: 100%;
-        max-width: 90vw;
+        max-width: 100vw;
     }
 }
 
 
-
-@media screen and (max-width: 768px) {
-    .blog {
-        grid-template-columns: 28% 70% 2%;
-        width: 100%;
-        max-width: 95vw;
-    }
-}
 
 
 .blog-part {
@@ -159,66 +144,30 @@ p {
         border-right: 0px solid cyan;
     }
 
-@media (max-width:1080px) and (orientation: portrait) {
+@media all and (orientation: portrait) {
     .blog-part {
         padding-top: 0px;
-        margin-top: 60vh;
+        margin-top: 35vh;
         padding-bottom: 10px;
-        height: 30vh;
-        max-width: 54.75vw;
-        margin-left: -52.75vw;
+        height: 55vh;
+        max-width: 37.5VW;
+        margin-left: -95.5vw;
         bottom: 0;
         background: #000001;
         z-index: 10000;
         overflow-y: auto;
     }
 }
-
-@media (max-width:768px) and (orientation: portrait) {
-    .blog-part {
-        padding-top: 0px;
-        margin-top: 60vh;
-        padding-bottom: 10px;
-        height: 30vh;
-        max-width: 54.75vw;
-        margin-left: -52.75vw;
-        bottom: 0;
-        background: #000001;
-        z-index: 10000;
-        overflow-y: auto;
-    }
-}
-
-@media (max-width:768px) and (orientation: portrait) {
-    .blog-part {
-        padding-top: 0px;
-        margin-top: 60vh;
-        padding-bottom: 10px;
-        height: 30vh;
-        max-width: 65.25vw;
-        margin-left: -64.75vw;
-        bottom: 0;
-        background: #000001;
-        z-index: 10000;
-        overflow-y: auto;
-    }
-}
-
 
 
 .blog-menu {
-    font-size: 22px;
+    font-size: 1.0em;
     text-decoration: none;
     display: flex;
     letter-spacing: -0.5px;
     align-items: center;
 }
 
-@media (max-width:1080px) and (orientation: portrait) {
-    .blog-menu {
-        /*font-size: 1.6vw;*/
-    }
-}
 
 .blog-menu svg {
     width: 22px;
@@ -233,31 +182,11 @@ p {
     margin-top: auto;
 }
 
-@media (max-width:1080px) and (orientation: portrait) {
+@media all and (orientation: portrait) {
     .blog-menu.mention {
     }
 }
 
-.blog-menu.subscribe {
-    margin-top: 8px;
-    font-size: 19px;
-    position: relative;
-}
-
-@media (max-width:1080px) and (orientation: portrait) {
-    .blog-menu.subscribe {
-    }
-}
-
-.blog-menu.subscribe:before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-color: #ffffff;
-    left: 0;
-    border-radius: 1px;
-    margin-right: 14px;
-}
 
 .blog-menu.rounded:before {
     content: "";
@@ -273,7 +202,7 @@ p {
     flex-direction: column;
 }
 
-@media (max-width:1080px) and (orientation: portrait) {
+@media all and (orientation: portrait) {
     .blog .is-menu {
         display: none;
     }
@@ -299,21 +228,21 @@ p {
 }
 
 i {
-        font-family: "Playfair Display", sans-serif;
-    }
+    font-family: "Playfair Display", sans-serif;
+}
 
-    .blog-article img {
-        border: 20px solid white;
-        margin-top:10px;
-        width: 424px;
-        margin-bottom: 20px;
-        box-shadow: 2px 2px cyan;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.blog-article img {
+    border: 20px solid white;
+    margin-top: 10px;
+    width: 424px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px cyan;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
-@media (max-width:1080px) and (orientation: portrait) {
+@media all and (orientation: portrait) {
     .blog-article img {
         width: 100%;
         margin-bottom: 30px;
@@ -335,18 +264,21 @@ i {
     line-height: 30px;
 }
 
-@media screen and (max-width: 1260px) {
+@media all and (orientation: portrait) {
     .page-number {
-        font-size: 18px;
+        justify-content: normal;
+        padding-top: 40px;
+        line-height: 2em;
     }
+
 }
 
 .small-title {
     border-bottom: 2px solid cyan;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    font-size: 24px;
-    line-height: 22px;
+    font-size: 1.2em;
+    line-height: 1.6em;
     max-height: 55px;
     font-family: "Playfair Display",sans-serif;
     pointer-events: none;
@@ -356,11 +288,11 @@ i {
 
 .date {
     display: flex;
-    justify-content: flex-end;
+    justify-content: normal;
 }
 
 .blog-article h2 {
-    font-size: 24px;
+    font-size: 1.2em;
     font-weight: 500;
     line-height: 1.2;
     margin: 8px 0 8px;
@@ -380,7 +312,7 @@ i {
 .blog-article a {
     text-decoration: none;
     display: flex;
-    font-size: 22px;
+    font-size: 1.0em;
     margin-bottom: 16px;
 }
 
@@ -393,7 +325,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 1.0em;
 }
 
     .blog-detail span {
@@ -411,11 +343,7 @@ i {
     border-right: 2px solid cyan;
 }
 
-@media screen and (max-width: 768px) {
-    .blog-header-container {
-        border-right: 0;
-    }
-}
+
 
 .blog-header-container > * {
     flex-shrink: 0;
@@ -430,33 +358,14 @@ i {
 }
 
 marquee {
-    /*font-size: 20px;
-    background-color: #000001;
-    color: #000001;
-    padding: 6px 0;
-    width: calc(100% + 44px);
-    margin-left: -20px;
-    flex-shrink: 0;*/
 }
 
-@media (max-width:1080px) and (orientation: portrait) {
+@media all and (orientation: portrait) {
     marquee {
         display: none;
     }
 }
 
-/*marquee span:before {
-    display: inline-block;
-    content: "";
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    position: relative;
-    top: -1px;
-    vertical-align: baseline;
-    background-color: #000001;
-    margin: 0 16px;
-}*/
 
 .blog-right {
     overflow: auto;
@@ -466,7 +375,7 @@ marquee {
 
     .blog-right .rounded {
         font-style: italic;
-        font-size: 18px;
+        font-size: 1.0em;
     }
 
         .blog-right .rounded:before {
@@ -479,7 +388,7 @@ marquee {
         }
 
 .blog-right-title {
-    font-size: 24px;
+    font-size: 1.2em;
     line-height: 22px;
     font-family: "Playfair Display", serif;
     pointer-events: none;
@@ -496,13 +405,13 @@ marquee {
     letter-spacing: -1px;
 }
 
-@media (max-width:1080px) and (orientation: portrait) {
+@media all and (orientation: portrait) {
     .blog-right-title-container {
         margin-top: 48px;
     }
 
     .blog-right-title {
-        display:inline-block;
+        display: inline-block;
     }
 
     .blog-right {
@@ -511,7 +420,7 @@ marquee {
 }
 
 .blog-title-date {
-    font-size: 16px;
+    font-size: 1.0em;
     display: inline-flex;
     align-items: baseline;
     justify-content: space-between;
@@ -519,7 +428,7 @@ marquee {
 }
 
     .blog-title-date i {
-        font-size: 20px;
+        font-size: 1.2em;
         margin-right: 20px;
         margin-left: 10px;
         display: inline-flex;
@@ -529,28 +438,27 @@ marquee {
     }
 
 .blog-right-page {
-    font-size: 40px;
     margin-bottom: 0px;
     font-family: "Space Grotesk", sans-serif;
 }
 
 .blog-right-page-title {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 28px;
+    font-size: 1.2em;
     font-weight: 600;
     max-width: 18ch;
     letter-spacing: -2px;
 }
 
 .blog-right-page-content {
-    font-size: 15px;
+    font-size: 1.0em;
     margin-top: 12px;
     line-height: 1.4;
 }
 
-@media (max-width:1080px) and (orientation: portrait) {
+@media all and (orientation: portrait) {
     .blog-right-page-content {
-        font-size:large;
+        font-size: 1.0em;
         margin-top: 12px;
         line-height: 1.4;
     }
@@ -567,27 +475,60 @@ marquee {
     pointer-events: none;
 }
 
-@media screen and (max-width: 768px) {
-    .right-blog {
-        /*display: none;*/
-    }
-}
-
-@media screen and (max-width: 1030px) {
-    .right-blog .blog-menu {
-        /*display: none;*/
-    }
-}
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-@media screen and (max-width: 560px) {
-    .blog-is-sticky {
-        /* display: none;*/
-    }
+
+
+.circle {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #000001;
+    padding: 20px;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 20px;
 }
+
+.circle-title {
+    font-size: 2.0em;
+    letter-spacing: -3px;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+.circle-subtitle {
+    max-width: 100%;
+    font-size: 5vh;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.circle-footer {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+}
+
+
+
+
+
+
+
+/*//////////////////RUNNING TEXT//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
 
 .running-text {
     letter-spacing: 8px;
@@ -600,20 +541,22 @@ marquee {
     font-family: "Playfair Display", serif;
     background-color: #000001;
     padding: 0em 0em;
-    /*-webkit-text-fill-color: #000001;*/
-    /*-webkit-text-stroke-width: 1px;*/
-    /*-webkit-text-stroke-color: #ffffff;*/
-    /*text-transform: uppercase;*/
     white-space: nowrap;
     position: absolute;
     pointer-events: none;
 }
 
-    .running-text i {
-        letter-spacing: 2px;
-        font-style: normal;
-        display: block;
+@media all and (orientation: portrait) {
+    .running-text {
+        display: none;
     }
+}
+
+.running-text i {
+    letter-spacing: 2px;
+    font-style: normal;
+    display: block;
+}
 
 .running-text--top {
     left: 0;
@@ -707,53 +650,90 @@ marquee {
 }
 
 
-.circle {
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background-color: cyan;
+
+
+/*///////////////////SCROLL HORIZONTAL/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.external {
+    overflow: hidden;
+    height: 40vh;
+}
+
+.horizontal-scroll-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vh;
+    transform: rotate(-90deg) translate3d(0,-100vh,0);
+    transform-origin: right top;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    height: 40vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    padding-bottom: 0rem;
+}
+
+.img-wrapper {
+    transform: rotate(90deg);
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    color: #000001;
-    padding: 20px;
-    text-align: center;
-    margin-top: 36px;
-    margin-bottom: 20px;
-}
-
-.circle-title {
-    font-size: xxx-large;
-    letter-spacing: -3px;
-    font-weight: 700;
-    font-family: "Space Grotesk", sans-serif;
-}
-
-
-.circle-subtitle {
-    max-width: 100%;
-    font-size: 5vh;
-    line-height: 1.3;
-    margin-bottom: 16px;
-}
-
-.circle-footer {
-    font-family: "Playfair Display", serif;
-    font-size: 24px;
-    letter-spacing: -1px;
+    justify-content: left;
+    transform-origin: 100% 100%;
+    transform: rotate(90deg) translateZ(.1px) scale(0.8) translateX(0px) translateY(10px);
+    transition: 1s;
 }
 
 
 
+.slower {
+    transform: rotate(90deg) translateZ(-.2px) scale(0.95) translateX(0%) translateY(0px);
+}
+
+.slower1 {
+    transform: rotate(90deg) translateZ(-.25px) scale(0.85) translateX(0%) translateY(10px);
+}
+
+.slower2 {
+    transform: rotate(90deg) translateZ(-.3px) scale(0.9) translateX(0%) translateY(20px);
+}
+
+.slower-down {
+    transform: rotate(90deg) translateZ(-.2px) scale(0.85) translateX(0%) translateY(10px);
+}
+
+.faster {
+    transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(50px);
+}
+
+.faster1 {
+    transform: rotate(90deg) translateZ(.05px) scale(0.9) translateX(0%) translateY(16px);
+}
+
+.fastest {
+    transform: rotate(90deg) translateZ(.22px) scale(0.8) translateX(-2vh) translateY(10px);
+}
+
+.vertical {
+    transform: rotate(90deg) translateZ(-.15px) scale(0.85) translateX(0%) translateY(8px);
+}
+
+.last {
+    transform: rotate(90deg) translateZ(-.2px) scale(0.9) translateX(2vh) translateY(20px);
+}
 
 
 
 
 
 
-/*______CARDS________*/
 
+
+
+/*/////////////////////CARDS//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 :root {
     --color1: rgb(0, 231, 255);
@@ -777,7 +757,9 @@ marquee {
     position: relative;
     overflow: hidden;
     margin-right: auto;
-    margin-left:auto;
+    margin-bottom: 1vh;
+    margin-bottom: 2vh;
+    margin-left: auto;
     overflow: hidden;
     z-index: 10;
     touch-action: none;
@@ -793,10 +775,11 @@ marquee {
     transform-origin: center;
 }
 
+
 @media screen and (min-width: 600px) {
     .card {
-        width: clamp(424px, 424px, 424px);
-        height: clamp(424px, 424px, 424px);
+        width: clamp(444px, 444px, 444px);
+        height: clamp(444px, 444px, 444px);
     }
 }
 
@@ -1125,79 +1108,5 @@ marquee {
 
 
 
-
-
-    /*____________________scroll____________*/
-
-
-
-.external {
-    overflow: hidden;
-    height: 40vh;
-}
-
-.horizontal-scroll-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vh;
-    transform: rotate(-90deg) translate3d(0,-100vh,0);
-    transform-origin: right top;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 0;
-    height: 40vh;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    padding-bottom: 0rem;
-}
-
-.img-wrapper {
-    transform: rotate(90deg);
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    transform-origin: 100% 100%;
-    transform: rotate(90deg) translateZ(.1px) scale(0.8) translateX(0px) translateY(10px);
-    transition: 1s;
-}
-
-
-
-.slower {
-    transform: rotate(90deg) translateZ(-.2px) scale(0.9) translateX(0%) translateY(0px);
-}
-
-.slower1 {
-    transform: rotate(90deg) translateZ(-.25px) scale(0.85) translateX(0%) translateY(10px);
-}
-
-.slower2 {
-    transform: rotate(90deg) translateZ(-.3px) scale(0.9) translateX(0%) translateY(20px);
-}
-
-.slower-down {
-    transform: rotate(90deg) translateZ(-.2px) scale(0.85) translateX(0%) translateY(10px);
-}
-
-.faster {
-    transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(50px);
-}
-
-.faster1 {
-    transform: rotate(90deg) translateZ(.05px) scale(0.9) translateX(0%) translateY(16px);
-}
-
-.fastest {
-    transform: rotate(90deg) translateZ(.22px) scale(0.8) translateX(-2vh) translateY(10px);
-}
-
-.vertical {
-    transform: rotate(90deg) translateZ(-.15px) scale(0.85) translateX(0%) translateY(8px);
-}
-
-.last {
-    transform: rotate(90deg) translateZ(-.2px) scale(0.9) translateX(2vh) translateY(20px);
-}
 
 
