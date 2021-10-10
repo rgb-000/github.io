@@ -147,12 +147,12 @@ p {
         margin-top: 35vh;
         padding-bottom: 10px;
         height: 55vh;
-        max-width: 37.5VW;
-        margin-left: -95.5vw;
+        max-width: 38VW;
+        margin-left: -96vw;
         bottom: 0;
         background: #000001;
         z-index: 10000;
-        overflow-y: auto;
+        overflow-y: hidden;
     }
 }
 
@@ -252,11 +252,11 @@ i {
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: left;
     font-weight: lighter;
     font-family: "Space Grotesk", sans-serif;
-    border-right: 2px solid cyan;
+    border-right: 3px solid cyan;
     white-space: nowrap;
     line-height: 30px;
 }
@@ -271,7 +271,7 @@ i {
 }
 
 .small-title {
-    border-bottom: 2px solid cyan;
+    border-bottom: 3px solid cyan;
     margin-bottom: 20px;
     padding-bottom: 20px;
     font-size: 1.4em;
@@ -337,7 +337,7 @@ i {
     flex-direction: column;
     /*-ms-scroll-snap-type: y mandatory;*/
     scroll-snap-type: y mandatory;
-    border-right: 2px solid cyan;
+    border-right: 3px solid cyan;
 }
 
 
@@ -395,7 +395,7 @@ marquee {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid cyan;
+    border-bottom: 3px solid cyan;
     margin-bottom: 16px;
     height: calc(62px + 0.6em);
     margin-top: 92px;
@@ -404,7 +404,7 @@ marquee {
 
 @media all and (orientation: portrait) {
     .blog-right-title-container {
-        margin-top: 48px;
+        margin-top: 0px;
     }
 
     .blog-right-title {
@@ -413,6 +413,7 @@ marquee {
 
     .blog-right {
         height: calc(100% - 0px);
+        padding-bottom:10vh;
     }
 }
 
@@ -676,8 +677,9 @@ marquee {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0;
-    height: 50vh;
+    height: 65vw;
     perspective: 1px;
+    margin-left: -5vw;
     transform-style: preserve-3d;
     padding-bottom: 0rem;
 }
@@ -694,9 +696,13 @@ marquee {
 }
 
 
+.img-wrapper:hover {
+        cursor: pointer;
+    }
+
 
 .slower {
-    transform: rotate(90deg) translateZ(-.2px) scale(0.95) translateX(10%) translateY(-40px);
+    transform: rotate(90deg) translateZ(-.2px) scale(0.95) translateX(0%) translateY(-40px);
 }
 
 .slower1 {
@@ -712,7 +718,7 @@ marquee {
 }
 
 .faster {
-    transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(0%) translateY(50px);
+    transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(-10%) translateY(50px);
 }
 
 .faster1 {
@@ -782,12 +788,20 @@ marquee {
 }
 
 
-@media screen and (min-width: 600px) {
+@media all and (min-width: 1080px) {
     .card {
         width: clamp(434px, 434px, 434px);
         height: clamp(434px, 434px, 434px);
     }
 }
+
+@media all and (orientation:portrait) {
+    .card {
+        width: clamp(52vw, 52vw, 52vw);
+        height: clamp(52vw, 52vw, 52vw);
+    }
+}
+
 
 .card:hover {
     box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
@@ -1111,7 +1125,6 @@ marquee {
         -webkit-animation-delay: 0.75s;
         animation-delay: 0.75s;
     }
-
 
 
 
