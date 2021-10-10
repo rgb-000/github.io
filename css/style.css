@@ -274,7 +274,7 @@ i {
     border-bottom: 2px solid cyan;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     line-height: 1.6em;
     max-height: 55px;
     font-family: "Playfair Display",sans-serif;
@@ -289,7 +289,7 @@ i {
 }
 
 .blog-article h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 500;
     line-height: 1.2;
     margin: 8px 0 8px;
@@ -385,7 +385,7 @@ marquee {
         }
 
 .blog-right-title {
-    font-size: 1.2em;
+    font-size: 1.4em;
     line-height: 22px;
     font-family: "Playfair Display", serif;
     pointer-events: none;
@@ -397,7 +397,7 @@ marquee {
     justify-content: space-between;
     border-bottom: 2px solid cyan;
     margin-bottom: 16px;
-    height: calc(62px + 0.5em);
+    height: calc(62px + 0.6em);
     margin-top: 92px;
     letter-spacing: -1px;
 }
@@ -422,10 +422,18 @@ marquee {
     align-items: baseline;
     justify-content: space-between;
     pointer-events: none;
+    margin-top: 0.4em;
 }
 
+    .blog-title-date n {
+        font-size: 1.5em;
+        font-weight:900;
+       
+    }
+
+
     .blog-title-date i {
-        font-size: 1.2em;
+        font-size: 1.4em;
         margin-right: 20px;
         margin-left: 10px;
         display: inline-flex;
@@ -441,7 +449,7 @@ marquee {
 
 .blog-right-page-title {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 600;
     max-width: 18ch;
     letter-spacing: -2px;
