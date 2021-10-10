@@ -64,9 +64,6 @@ p {
 
 
 
-.blog-article i {
-    padding: 0 20px;
-}
 
 .logo-twitter, .logo-discord {
     height: 28px;
@@ -400,7 +397,7 @@ marquee {
     justify-content: space-between;
     border-bottom: 2px solid cyan;
     margin-bottom: 16px;
-    height: 62px;
+    height: calc(62px + 0.5em);
     margin-top: 92px;
     letter-spacing: -1px;
 }
