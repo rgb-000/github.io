@@ -783,8 +783,8 @@ marquee {
 
 @media screen and (min-width: 600px) {
     .card {
-        width: clamp(444px, 444px, 444px);
-        height: clamp(444px, 444px, 444px);
+        width: clamp(434px, 434px, 434px);
+        height: clamp(434px, 434px, 434px);
     }
 }
 
@@ -891,20 +891,20 @@ marquee {
 
 .card.animated {
     transition: none;
-    -webkit-animation: holoCard 12s ease 0s 1;
-    animation: holoCard 12s ease 0s 1;
+    -webkit-animation: holoCard 12s ease 0s infinite ;
+    animation: holoCard 12s ease 0s infinite ;
 }
 
     .card.animated:before {
         transition: none;
-        -webkit-animation: holoGradient 12s ease 0s 1;
-        animation: holoGradient 12s ease 0s 1;
+        -webkit-animation: holoGradient 12s ease 0s infinite;
+        animation: holoGradient 12s ease 0s infinite;
     }
 
     .card.animated:after {
         transition: none;
-        -webkit-animation: holoSparkle 12s ease 0s 1;
-        animation: holoSparkle 12s ease 0s 1;
+        -webkit-animation: holoSparkle 12s ease 0s infinite;
+        animation: holoSparkle 12s ease 0s infinite;
     }
 
 @-webkit-keyframes holoSparkle {
