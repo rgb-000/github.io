@@ -31,7 +31,7 @@ body {
     background-color: #000001;
     display: flex;
     font-size: 16px;
-    font-family: /*dm mono,*/ Roboto, Helvetica, sans-serif;
+    font-family: 'Roboto', Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -479,7 +479,7 @@ marquee {
     font-size: 1.4em;
     font-weight: 600;
     max-width: 18ch;
-    letter-spacing: -2px;
+    letter-spacing: -0.08em;
 }
 
 .blog-right-page-content {
