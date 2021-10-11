@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 
 * {
     outline: none;
@@ -248,7 +244,8 @@ p {
 }
 
 i {
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Playfair Display",serif;
+    font-style: italic;
 }
 
 .blog-article img {
@@ -300,7 +297,8 @@ i {
     font-size: 1.4em;
     line-height: 1.6em;
     max-height: 55px;
-    font-family: "Playfair Display",sans-serif;
+    font-family: "Playfair Display",serif;
+    font-style:italic;
     pointer-events: none;
 }
 
@@ -320,7 +318,8 @@ i {
 }
 
     .blog-article h2 span {
-        font-family: "Playfair Display", serif;
+        font-family: "Playfair Display",serif;
+        font-style: italic;
     }
 
 .blog-article p {
@@ -349,7 +348,8 @@ i {
 }
 
     .blog-detail span {
-        font-family: "Playfair Display", serif;
+        font-family: "Playfair Display",serif;
+        font-style: italic;
     }
 
 .blog-header-container {
@@ -411,7 +411,8 @@ marquee {
 .blog-right-title {
     font-size: 1.4em;
     line-height: 22px;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display",serif;
+    font-style: italic;
     pointer-events: none;
 }
 
@@ -463,7 +464,8 @@ marquee {
         margin-left: 10px;
         display: inline-flex;
         align-items: baseline;
-        font-family: "Playfair Display", serif;
+        font-family: "Playfair Display",serif;
+        font-style: italic;
         justify-content: left;
     }
 
@@ -544,7 +546,8 @@ marquee {
 }
 
 .circle-footer {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display",serif;
+    font-style: italic;
     font-size: 1.2em;
     letter-spacing: -1px;
 }
@@ -568,7 +571,8 @@ marquee {
     max-width: 100vw;
     line-height: 20px;
     font-size: 20px;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display",serif;
+    font-style: italic;
     background-color: #000001;
     padding: 0em 0em;
     white-space: nowrap;
