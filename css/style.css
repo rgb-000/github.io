@@ -47,15 +47,10 @@ p {
     font-size: 1.0em;
 }
 
-@media all and (orientation: portrait) {
-    body {
-        font-size: 24px;
-    }
-}
 
-@media screen and (orientation: portrait) {
+@media handheld and (orientation: portrait) {
     body {
-        font-size: 32px;
+        font-size: 28px;
     }
 }
 
