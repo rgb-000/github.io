@@ -48,13 +48,17 @@ p {
 }
 
 
-@media handheld and (orientation: portrait) {
+@media (min-width:1080px) and (orientation: portrait) {
+    body {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:10790px) and (orientation: portrait) {
     body {
         font-size: 28px;
     }
 }
-
-
 
 
 
