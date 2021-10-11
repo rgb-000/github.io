@@ -13,6 +13,9 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    pointer-events: visible !important;
+}
 
 .text {
     line-height: 20px;
@@ -124,24 +127,25 @@ p {
 }
 
 .image {
-
     width: 384px;
     height: 384px;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
     background: url("/img/x.png");
     background-position: center;
-    -webkit-transition: all 1s ease;
+    /*-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
+    -o-transition: all 1s ease;*/
     transition: all 1s ease;
 }
 
     .image:hover {
         -webkit-transform: scale(0.25)
-        -moz-transform: scale(0.25)
+        /*-moz-transform: scale(0.25)
         -o-transform: scale(0.25)
-        -ms-transform: scale(0.25) /* IE 9 */
-        transform: scale(0.25)
+        -ms-transform: scale(0.25) 
+        transform: scale(0.25) */
     } 
 
 @media all and (orientation: portrait) {
@@ -252,6 +256,12 @@ i {
     font-style: italic;
 }
 
+
+img {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+}
+
 .blog-article img {
     border: 20px solid white;
     margin-top: 10px;
@@ -304,6 +314,7 @@ i {
     font-family: "Playfair Display",serif;
     font-style:italic;
     pointer-events: none;
+    font-weight:700;
 }
 
 
@@ -324,6 +335,7 @@ i {
     .blog-article h2 span {
         font-family: "Playfair Display",serif;
         font-style: italic;
+        font-weight: 700;
     }
 
 .blog-article p {
@@ -354,6 +366,7 @@ i {
     .blog-detail span {
         font-family: "Playfair Display",serif;
         font-style: italic;
+        font-weight: 700;
     }
 
 .blog-header-container {
@@ -401,6 +414,7 @@ marquee {
     .blog-right .rounded {
         font-style: italic;
         font-size: 1.0em;
+        font-weight: 700;
     }
 
         .blog-right .rounded:before {
@@ -722,7 +736,7 @@ marquee {
     align-items: center;
     justify-content: left;
     transform-origin: 100% 100%;
-    transform: rotate(90deg) translateZ(.1px) scale(0.8) translateX(0px) translateY(10px);
+    transform: rotate(90deg) translateZ(.1px) scale(0.75) translateX(0px) translateY(20px);
     transition: 1s;
     box-shadow: 0 30px 30px #5f2f1182;
 }
@@ -734,11 +748,11 @@ marquee {
 
 
 .slower {
-    transform: rotate(90deg) translateZ(-.2px) scale(0.95) translateX(0%) translateY(-40px);
+    transform: rotate(90deg) translateZ(-.2px) scale(0.95) translateX(0%) translateY(0px);
 }
 
 .slower1 {
-    transform: rotate(90deg) translateZ(-.25px) scale(0.85) translateX(0%) translateY(10px);
+    transform: rotate(90deg) translateZ(-.25px) scale(0.85) translateX(0%) translateY(0px);
 }
 
 .slower2 {
@@ -750,15 +764,15 @@ marquee {
 }
 
 .faster {
-    transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(-10%) translateY(50px);
+    transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(-10%) translateY(30px);
 }
 
 .faster1 {
-    transform: rotate(90deg) translateZ(.05px) scale(0.9) translateX(0%) translateY(16px);
+    transform: rotate(90deg) translateZ(.05px) scale(0.9) translateX(0%) translateY(30px);
 }
 
 .fastest {
-    transform: rotate(90deg) translateZ(.22px) scale(0.8) translateX(-2vh) translateY(10px);
+    transform: rotate(90deg) translateZ(.22px) scale(0.8) translateX(-2vh) translateY(30px);
 }
 
 .vertical {
@@ -1160,4 +1174,90 @@ marquee {
 
 
 
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#outer {
+    animation: scroll 24s linear infinite;
+}
+
+    #outer:hover {
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused;
+        cursor: pointer;
+    }
+
+
+
+@keyframes scroll {
+    from {
+        animation-timing-function: linear;
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-90%);
+    }
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.loupe-widget {
+    position: relative;
+    display: inline-block;
+    will-change: transform;
+}
+
+.loupe-widget__loupe {
+    position: absolute;
+    z-index: 10000;
+
+    width: 264px;
+    height: 264px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    border: 0px solid #222;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: none;
+}
+
+.loupe-widget:hover {
+    cursor: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7), auto;
+}
+
+    .loupe-widget:hover .loupe-widget__loupe {
+        display: block;
+        pointer-events: none;
+    }
+
+
+
+
+    /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.hover-menu-image {
+     display: none;
+    z-index: 10000 !important;
+    position: fixed;
+    top: calc(50vh - 384px);
+    min-width: 768px;
+    right: calc(50vw - 384px);
+}
+
+
+
+.hover-menu-item:hover + .hover-menu-image {
+    display: block !important;
+}
 
