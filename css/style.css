@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 
 * {
     outline: none;
@@ -31,8 +31,8 @@ html {
 body {
     background-color: #000001;
     display: flex;
-    font-size:16px;
-    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-family: /*dm mono,*/ Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -104,7 +104,7 @@ p {
     max-width: 1200px;
     display: grid;
     height: 90vh;
-    max-height: 880px;
+    max-height: 930px;
     overflow: hidden;
     grid-template-columns: 5% 20% 40% 30%;
     grid-template-rows: 100%;
@@ -113,7 +113,33 @@ p {
     position: relative;
 }
 
+.image-box {
+    width: 424px;
+    height: 424px;
+    overflow: hidden;
+    border: 20px solid white;
+}
 
+.image {
+
+    width: 384px;
+    height: 384px;
+    background: url("/img/x.png");
+    background-position: center;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+    .image:hover {
+        -webkit-transform: scale(0.25)
+        -moz-transform: scale(0.25)
+        -o-transform: scale(0.25)
+        -ms-transform: scale(0.25) /* IE 9 */
+        transform: scale(0.25)
+    } 
 
 @media all and (orientation: portrait) {
     .blog {
@@ -142,7 +168,7 @@ p {
         padding-bottom: 10px;
         height: 55vh;
         max-width: 38VW;
-        margin-left: -96vw;
+        margin-left: -95.5vw;
         bottom: 0;
         background: #000001;
         z-index: 10000;
@@ -342,11 +368,12 @@ i {
     scroll-snap-align: start;
 }
 
-.blog-header-container .blog-article:not(.header-article) {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
+    .blog-header-container .blog-article:not(.header-article) {
+        flex-grow: 1;
+        display: flex;
+        margin-bottom: 10vh;
+        flex-direction: column;
+    }
 
 marquee {
 }
