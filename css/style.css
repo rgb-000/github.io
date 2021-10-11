@@ -48,13 +48,13 @@ p {
 }
 
 
-@media (min-width:801px) and (orientation: portrait) {
+@media all and (min-width:801px) and (orientation: portrait) {
     body {
         font-size: 24px;
     }
 }
 
-@media (max-width:800px) and (orientation: portrait) {
+@media all and (max-width:800px) and (orientation: portrait) {
     body {
         font-size: 32px;
     }
