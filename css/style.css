@@ -285,7 +285,7 @@ img {
 
 @media all and (orientation: portrait) {
     .blog-article img {
-        width: 100%;
+        width: 56vw;
         margin-bottom: 30px;
     }
 }
@@ -335,7 +335,6 @@ img {
     font-family: "Playfair Display",serif;
     font-style:italic;
     pointer-events: none;
-    font-weight:700;
 }
 
 
@@ -356,7 +355,6 @@ img {
     .blog-article h2 span {
         font-family: "Playfair Display",serif;
         font-style: italic;
-        font-weight: 700;
     }
 
 .blog-article p {
