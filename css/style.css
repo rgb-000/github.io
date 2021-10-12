@@ -100,7 +100,7 @@ p {
     z-index: 1;
 }
 .blog-article li {
-    margin-top: 2vh;
+    margin-top: 0.5em;
     pointer-events:visible !important;
 }
 
@@ -1305,7 +1305,7 @@ marquee {
 }
 
 .Menu-list {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.0;
     text-transform: uppercase;
     text-align: center;
@@ -1314,6 +1314,19 @@ marquee {
     margin-left: -1.2em;
     align-items: center;
     transform: rotateX(-10deg) rotateY(20deg);
+}
+
+@media all and (orientation: portrait) {
+
+    .Menu-list {
+        font-size: 3rem;
+        
+    }
+}
+
+.Menu-list li {
+    margin-top: 2vh;
+    pointer-events: visible !important;
 }
 
 .Menu-list-item {
