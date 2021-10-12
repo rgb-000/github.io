@@ -53,13 +53,13 @@ p {
 
 @media all and (min-width:801px) and (orientation: portrait) {
     body {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
 @media all and (max-width:800px) and (orientation: portrait) {
     body {
-        font-size: 32px;
+        font-size: 36px;
     }
 }
 
@@ -160,7 +160,7 @@ p {
 @media all and (orientation: portrait) {
     .blog {
         max-height: 90vh;
-        grid-template-columns: 40% 60% 0%;
+        grid-template-columns: 35% 65% 0%;
         width: 100%;
         max-width: 100vw;
     }
@@ -183,8 +183,8 @@ p {
         margin-top: 35vh;
         padding-bottom: 10px;
         height: 55vh;
-        max-width: 38VW;
-        margin-left: -95.5vw;
+        max-width: 34VW;
+        margin-left: -96vw;
         bottom: 0;
         background: #000001;
         z-index: 10000;
