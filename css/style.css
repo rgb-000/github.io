@@ -552,15 +552,15 @@ marquee {
     }
 
     .blog-title-date {
-        white-space:nowrap;
     }
 }
 
-    .blog-title-date i {
-
+.blog-title-date i {
     font-size: 1.2em;
     display: initial;
-    padding-right: 16px;}
+    white-space: nowrap;
+    padding-right: 16px;
+}
 }
 
 .blog-right-container + .blog-right-container {
