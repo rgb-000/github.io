@@ -66,9 +66,10 @@ p {
 
 
 .logo-twitter, .logo-discord {
-    height: 28px;
-    width: 28px;
+    height: 3vh;
+    width: 3vh;
     margin-left: -6px;
+    margin-top:1vh;
     display: inline;
     pointer-events: none;
 }
@@ -99,7 +100,7 @@ p {
     z-index: 1;
 }
 .blog-article li {
-    margin-top: 0.75em;
+    margin-top: 2vh;
     pointer-events:visible !important;
 }
 
