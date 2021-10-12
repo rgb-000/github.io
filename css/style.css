@@ -466,6 +466,7 @@ marquee {
     font-family: "Playfair Display",serif;
     font-style: italic;
     pointer-events: none;
+
 }
 
 .blog-right-title-container {
@@ -531,6 +532,7 @@ marquee {
     font-size: 1.4em;
     font-weight: 600;
     max-width: 18ch;
+    margin-top: 2vh;
     letter-spacing: -0.08em;
 }
 
