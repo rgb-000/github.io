@@ -546,6 +546,21 @@ marquee {
         margin-top: 12px;
         line-height: 1.4;
     }
+
+    .blog-right-page {
+        margin-top: 3vh;
+    }
+
+    .blog-title-date {
+        white-space:nowrap;
+    }
+}
+
+    .blog-title-date i {
+
+    font-size: 1.2em;
+    display: initial;
+    padding-right: 16px;}
 }
 
 .blog-right-container + .blog-right-container {
