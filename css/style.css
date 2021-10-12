@@ -181,9 +181,9 @@ p {
 @media all and (orientation: portrait) {
     .blog-part {
         padding-top: 0px;
-        margin-top: 35vh;
+        margin-top: 30vh;
         padding-bottom: 10px;
-        height: 55vh;
+        height: 60vh;
         max-width: 34VW;
         margin-left: -96vw;
         bottom: 0;
@@ -1319,12 +1319,12 @@ marquee {
 @media all and (orientation: portrait) {
 
     .Menu-list {
-        font-size: 4rem;
+        font-size: 3rem;
         
     }
 
    .Menu-list li {
-            margin-top: 5vh;
+            margin-top: 4vh;
     }
 }
 
