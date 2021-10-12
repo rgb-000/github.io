@@ -1322,10 +1322,14 @@ marquee {
         font-size: 4rem;
         
     }
+
+   .Menu-list li {
+            margin-top: 5vh;
+    }
 }
 
 .Menu-list li {
-    margin-top: 5vh;
+    margin-top: 2vh;
     pointer-events: visible !important;
 }
 
