@@ -1319,13 +1319,13 @@ marquee {
 @media all and (orientation: portrait) {
 
     .Menu-list {
-        font-size: 3rem;
+        font-size: 4rem;
         
     }
 }
 
 .Menu-list li {
-    margin-top: 3vh;
+    margin-top: 5vh;
     pointer-events: visible !important;
 }
 
