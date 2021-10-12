@@ -66,10 +66,12 @@ p {
 
 
 .logo-twitter, .logo-discord {
-    height: 3vh;
-    width: 3vh;
+    height: 2.5vh;
+    width: 2.5vh;
+    max-height: 2.5vh;
+    max-width: 2.5vh;
     margin-left: -6px;
-    margin-top:1vh;
+    margin-top: 1vh;
     display: inline;
     pointer-events: none;
 }
@@ -650,8 +652,8 @@ marquee {
 }
 
     .running-text--top i {
-        -webkit-animation: runningLineX 10s infinite linear;
-        animation: runningLineX 10s infinite linear;
+        -webkit-animation: runningLineX 10s infinite linear ;
+        animation: runningLineX 10s infinite linear ;
     }
 
 .running-text--bottom {
@@ -696,41 +698,41 @@ marquee {
 
 @-webkit-keyframes runningLineX {
     0% {
-        transform: translateX(-1000px);
+        transform: translateX(0px);
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateX(-1000px);
     }
 }
 
 @keyframes runningLineX {
     0% {
-        transform: translateX(-1000px);
+        transform: translateX(0px);
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateX(-1000px);
     }
 }
 
 @-webkit-keyframes runningLineY {
     0% {
-        transform: translateY(-1000px);
+        transform: translateY(0px);
     }
 
     100% {
-        transform: translateY(0px);
+        transform: translateY(-1000px);
     }
 }
 
 @keyframes runningLineY {
     0% {
-        transform: translateY(-1000px);
+        transform: translateY(0px);
     }
 
     100% {
-        transform: translateY(0px);
+        transform: translateY(-1000px);
     }
 }
 
@@ -831,16 +833,16 @@ marquee {
     --color2: rgb(255, 0, 231);
     --charizard1: #fac;
     --charizard2: #ddccaa;
-    --charizardfront: url(/img/1188.png);
+    --charizardfront: url(/img/1358.png);
     --pika1: #54a29e;
     --pika2: #a79d66;
-    --pikafront: url(/img/502.png);
+    --pikafront: url(/img/1358.png);
     --eevee1: #efb2fb;
     --eevee2: #acc6f8;
-    --eeveefront: url(/img/1512.png);
+    --eeveefront: url(/img/rare.png);
     --mewtwo1: #efb2fb;
     --mewtwo2: #acc6f8;
-    --mewtwofront: url(/img/1340.png);
+    --mewtwofront: url(/img/1358.png);
 }
 
 .card {
@@ -922,7 +924,7 @@ marquee {
     bottom: 0;
     top: 0;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 0.33;
     mix-blend-mode: color-dodge;
     transition: all 0.33s ease;
 }
@@ -931,7 +933,7 @@ marquee {
     background-position: 50% 50%;
     background-size: 300% 300%;
     background-image: linear-gradient(115deg, transparent 0%, var(--color1) 25%, transparent 47%, transparent 53%, var(--color2) 75%, transparent 100%);
-    opacity: 0.5;
+    opacity: 0.33;
     filter: brightness(0.5) contrast(1);
     z-index: 1;
 }
@@ -946,13 +948,13 @@ marquee {
     filter: brightness(1) contrast(1);
     transition: all 0.33s ease;
     mix-blend-mode: color-dodge;
-    opacity: 0.75;
+    opacity: 0.33;
 }
 
 .card.active:after,
 .card:hover:after {
     filter: brightness(1) contrast(1);
-    opacity: 1;
+    opacity: .75;
 }
 
 .card.active,
@@ -969,7 +971,7 @@ marquee {
         background-image: linear-gradient(110deg, transparent 25%, var(--color1) 48%, var(--color2) 52%, transparent 75%);
         background-position: 50% 50%;
         background-size: 250% 250%;
-        opacity: 0.88;
+        opacity: 0.5;
         filter: brightness(0.66) contrast(1.33);
         transition: none;
     }
