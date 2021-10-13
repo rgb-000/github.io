@@ -51,18 +51,13 @@ p {
 }
 
 
-@media all and (min-width:801px) and (orientation: portrait) {
+@media all and (orientation: portrait) {
     body {
         font-size: 28px;
         padding: 0 0em;
     }
 }
 
-@media all and (max-width:800px) and (orientation: portrait) {
-    body {
-        font-size: 36px;
-    }
-}
 
 
 
@@ -239,7 +234,7 @@ p {
         text-decoration: none;
         /*display: flex;*/
         letter-spacing: -0.5px;
-        align-items: center;
+        /*align-items: center;*/
     }
 
 
@@ -367,16 +362,26 @@ p {
     .small-title {
         border-bottom: 3px solid cyan;
         margin-bottom: 20px;
-        padding-bottom: 20px;
         font-size: 1.4em;
-        line-height: 1.6em;
-        max-height: 55px;
+        max-height: 3em;
+        align-items:center;
         font-family: "Playfair Display",serif;
         font-style: italic;
         pointer-events: none;
     }
 
-
+@media all and (orientation: portrait) {
+    .page-number {
+        justify-content: normal;
+        padding-top: 40px;
+        line-height: 2em;
+    }
+    .small-title {
+       
+        font-size: 1.2em;
+        max-height: 4em;
+    }
+    }
 
     .date {
         display: flex;
@@ -451,14 +456,7 @@ p {
             flex-direction: column;
         }
 
-    marquee {
-    }
-
-    @media all and (orientation: portrait) {
-        marquee {
-            display: none;
-        }
-    }
+ 
 
 
     .blog-right {
@@ -490,20 +488,22 @@ p {
         pointer-events: none;
     }
 
-    .blog-right-title-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 3px solid cyan;
-        margin-bottom: 16px;
-        height: calc(62px + 0.6em);
-        margin-top: 92px;
-        letter-spacing: -1px;
-    }
+.blog-right-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid cyan;
+    margin-bottom: 14px;
+    height: 30px;
+    margin-top: 133px;
+    letter-spacing: -1px;
+    padding-bottom: 10px;
+}
 
     @media all and (orientation: portrait) {
         .blog-right-title-container {
             margin-top: 0px;
+            height: 50px;
         }
 
         .blog-right-title {
