@@ -516,7 +516,7 @@ marquee {
     .blog-title-date i {
         font-size: 1.4em;
         margin-right: 20px;
-        margin-left: 10px;
+        padding-left: 0.4em;
         display: inline-flex;
         align-items: baseline;
         font-family: "Playfair Display",serif;
@@ -558,14 +558,16 @@ marquee {
     .blog-title-date {
         display: initial;
     }
+
+        .blog-title-date i {
+            font-size: 1.2em;
+            display: initial;
+            padding-left: 0;
+        }
 }
 
-.blog-title-date i {
-    font-size: 1.2em;
-    display: initial;
-    margin-left: 0px;
-}
-}
+
+
 
 .blog-right-container + .blog-right-container {
     margin-top: 40px;
