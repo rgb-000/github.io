@@ -201,12 +201,13 @@ p {
         margin-top: 30vh;
         padding-bottom: 10px;
         height: 60vh;
-        max-width: 34VW;
-        margin-left: -96vw;
+        max-width: 32.5VW;
+        margin-left: -94.5vw;
         bottom: 0;
         background: #000001;
         z-index: 10000;
         overflow-y: hidden;
+        padding-right: 1vw;
     }
 }
 
@@ -502,6 +503,7 @@ marquee {
     justify-content: space-between;
     pointer-events: none;
     margin-top: 0.4em;
+    margin-bottom:-0.2em;
 }
 
     .blog-title-date n {
@@ -554,14 +556,14 @@ marquee {
     }
 
     .blog-title-date {
+        display: initial;
     }
 }
 
 .blog-title-date i {
     font-size: 1.2em;
     display: initial;
-    white-space: nowrap;
-    padding-right: 16px;
+    margin-left: 0px;
 }
 }
 
