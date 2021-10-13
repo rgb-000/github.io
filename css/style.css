@@ -586,10 +586,7 @@ p {
     }
 
 
-
-
     .blog-right-container + .blog-right-container {
-        margin-top: 40px;
         pointer-events: none;
     }
 
