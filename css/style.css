@@ -653,22 +653,23 @@ p {
 
 
 
-    .running-text {
-        letter-spacing: 8px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        max-height: 99vh;
-        max-width: 100vw;
-        line-height: 20px;
-        font-size: 20px;
-        font-family: "Playfair Display",serif;
-        font-style: italic;
-        background-color: #000001;
-        padding: 0em 0em;
-        white-space: nowrap;
-        position: absolute;
-        pointer-events: none;
-    }
+.running-text {
+    display: none;
+    letter-spacing: 8px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 99vh;
+    max-width: 100vw;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: "Playfair Display",serif;
+    font-style: italic;
+    background-color: #000001;
+    padding: 0em 0em;
+    white-space: nowrap;
+    position: absolute;
+    pointer-events: none;
+}
 
     @media all and (orientation: portrait) {
         .running-text {
@@ -785,23 +786,23 @@ p {
         height: 40vh;
     }
 
-    .horizontal-scroll-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100vh;
-        transform: rotate(-90deg) translate3d(0,-100vh,0);
-        transform-origin: right top;
-        overflow-y: auto;
-        overflow-x: hidden;
-        padding: 0;
-        height: 65vw;
-        perspective: 1px;
-        margin-left: -5vw;
-        transform-style: preserve-3d;
-        padding-bottom: 0rem;
-    }
-
+.horizontal-scroll-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vh;
+    transform: rotate(-90deg) translate3d(0,-100vh,0);
+    transform-origin: right top;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    height: 65vw;
+    perspective: 1px;
+    margin-left: -5vw;
+    transform-style: preserve-3d;
+    padding-bottom: 0rem;
+    pointer-events: none;
+}
     .img-wrapper {
         transform: rotate(90deg);
         display: flex;
@@ -815,7 +816,7 @@ p {
 
 
         .img-wrapper:hover {
-            cursor: pointer;
+            pointer-events: none;
         }
 
 
@@ -1256,6 +1257,7 @@ p {
         animation: scroll 24s linear infinite;
     }
 
+    /*
         #outer:hover {
             -webkit-animation-play-state: paused;
             -moz-animation-play-state: paused;
@@ -1263,7 +1265,7 @@ p {
             animation-play-state: paused;
             cursor: pointer;
         }
-
+        */
 
 
     @keyframes scroll {
