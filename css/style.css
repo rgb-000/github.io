@@ -796,9 +796,8 @@ p {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0;
-    height: 65vw;
+    height: 100vh;
     perspective: 1px;
-    margin-left: -5vw;
     transform-style: preserve-3d;
     padding-bottom: 0rem;
     pointer-events: none;
@@ -808,9 +807,10 @@ p {
         display: flex;
         align-items: center;
         justify-content: left;
-        transform-origin: 100% 100%;
+        /*transform-origin: 100% 100%;*/
         transform: rotate(90deg) translateZ(.1px) scale(0.75) translateX(0px) translateY(20px);
         transition: 1s;
+        margin-left:60vh;
         box-shadow: 0 30px 30px #5f2f1182;
     }
 
@@ -821,27 +821,27 @@ p {
 
 
     .slower {
-        transform: rotate(90deg) translateZ(-.2px) scale(0.95) translateX(0%) translateY(0px);
+        transform: rotate(90deg) translateZ(-.2px) scale(0.9) translateX(0%) translateY(0px);
     }
 
     .slower1 {
-        transform: rotate(90deg) translateZ(-.25px) scale(0.85) translateX(0%) translateY(0px);
+        transform: rotate(90deg) translateZ(-.25px) scale(0.8) translateX(0%) translateY(0px);
     }
 
     .slower2 {
-        transform: rotate(90deg) translateZ(-.3px) scale(0.9) translateX(0%) translateY(20px);
+        transform: rotate(90deg) translateZ(-.3px) scale(0.85) translateX(0%) translateY(20px);
     }
 
     .slower-down {
-        transform: rotate(90deg) translateZ(-.2px) scale(0.85) translateX(0%) translateY(10px);
+        transform: rotate(90deg) translateZ(-.2px) scale(0.8) translateX(0%) translateY(10px);
     }
 
     .faster {
-        transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(-10%) translateY(30px);
+        transform: rotate(90deg) translateZ(.15px) scale(0.75) translateX(-10%) translateY(30px);
     }
 
     .faster1 {
-        transform: rotate(90deg) translateZ(.05px) scale(0.9) translateX(0%) translateY(30px);
+        transform: rotate(90deg) translateZ(.05px) scale(0.85) translateX(0%) translateY(30px);
     }
 
     .fastest {
@@ -849,11 +849,11 @@ p {
     }
 
     .vertical {
-        transform: rotate(90deg) translateZ(-.15px) scale(0.85) translateX(0%) translateY(8px);
+        transform: rotate(90deg) translateZ(-.15px) scale(0.9) translateX(0%) translateY(8px);
     }
 
     .last {
-        transform: rotate(90deg) translateZ(-.2px) scale(0.9) translateX(2vh) translateY(20px);
+        transform: rotate(90deg) translateZ(-.2px) scale(0.8) translateX(2vh) translateY(20px);
     }
 
 
