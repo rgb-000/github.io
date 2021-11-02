@@ -186,7 +186,7 @@ p {
 
     @media all and (orientation: portrait) {
         .mob {
-            display: auto;
+            display: normal;
         }
 
         .desk {
@@ -201,7 +201,7 @@ p {
         }
 
         .desk {
-            display: auto;
+            display:normal ;
         }
     }
 
@@ -604,7 +604,11 @@ p {
         flex-direction: column;
         pointer-events: none;
     }
-
+.cyan a{
+    color:cyan;
+    pointer-events:visible;
+    cursor:pointer;
+}
 
     ::-webkit-scrollbar {
         display: none;
@@ -652,13 +656,19 @@ p {
     }
 
 
+a {
+    color: cyan !important;
+}
 
-
+a:hover
+{color:cyan;}
+a:visited {
+    color: cyan;
+}
 
 
 
     /*//////////////////RUNNING TEXT//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
 
 
 
@@ -820,8 +830,14 @@ p {
         transform: rotate(90deg) translateZ(.1px) scale(0.75) translateX(0px) translateY(20px);
         transition: 1s;
         margin-left:60vh;
-        box-shadow: 0 30px 30px #5f2f1182;
     }
+
+
+.faster img{
+    width:768px;
+    border:solid 10px white;
+    
+}
 
 
         .img-wrapper:hover {
@@ -830,36 +846,21 @@ p {
 
 
     .slower {
-        transform: rotate(90deg) translateZ(-.2px) scale(0.9) translateX(0%) translateY(0px);
+        transform: rotate(90deg) translateZ(-.2px) scale(0.9) translateX(-10%) translateY(0px);
     }
 
     .slower1 {
-        transform: rotate(90deg) translateZ(-.25px) scale(0.8) translateX(0%) translateY(0px);
+        transform: rotate(90deg) translateZ(-1.25px) scale(0.8) translateX(35%) translateY(0px);
     }
 
     .slower2 {
-        transform: rotate(90deg) translateZ(-.3px) scale(0.85) translateX(0%) translateY(20px);
-    }
-
-    .slower-down {
-        transform: rotate(90deg) translateZ(-.2px) scale(0.8) translateX(0%) translateY(10px);
+        transform: rotate(90deg) translateZ(-1.3px) scale(0.85) translateX(25%) translateY(20px);
     }
 
     .faster {
-        transform: rotate(90deg) translateZ(.15px) scale(0.75) translateX(-10%) translateY(30px);
+        transform: rotate(90deg) translateZ(.15px) scale(1) translateX(0%) translateY(30px);
     }
 
-    .faster1 {
-        transform: rotate(90deg) translateZ(.05px) scale(0.85) translateX(0%) translateY(30px);
-    }
-
-    .fastest {
-        transform: rotate(90deg) translateZ(.22px) scale(0.8) translateX(-2vh) translateY(30px);
-    }
-
-    .vertical {
-        transform: rotate(90deg) translateZ(-.15px) scale(0.9) translateX(0%) translateY(8px);
-    }
 
     .last {
         transform: rotate(90deg) translateZ(-.2px) scale(0.8) translateX(2vh) translateY(20px);
@@ -1360,7 +1361,6 @@ p {
         font-family: "Space Grotesk", sans-serif;
         font-weight: 700;
         -webkit-font-smoothing: antialiased;
-        -webkit-font-kerning: normal;
         -webkit-text-size-adjust: 100%;
         transform-style: preserve-3d;
         transform: perspective(80rem);
