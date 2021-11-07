@@ -15,11 +15,18 @@ pre {
 
 @media all and (orientation: portrait) {
     table#nextlaunch {
-        table-layout: fixed;
-        width: 200px !important;
-        text-align: left;
-        position: absolute;
+        width: 450px !important;
+        text-align: left !important;
+        text-align: center !important;
+        position: absolute !important;
         top: 180px !important;
+        transform: rotate(0deg) !important;
+        font-size: 36px !important;
+        line-height: 30px !important;
+        transform-origin: left !important;
+        font-weight: 700 !important;
+        left: 20px !important;
+        margin-bottom: 0 !important;
     }
 }
 
