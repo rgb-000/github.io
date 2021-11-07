@@ -24,16 +24,16 @@ table#nextlaunch {
 */
 table#nextlaunch {
     table-layout: fixed;
-    width: 600px !important;
+    width: 300px !important;
     text-align: center;
     position: absolute;
-    font-size: 80px;
+    font-size: 50px;
     overflow-anchor: visible;
-    line-height: 100px;
+    line-height: 50px;
     transform-origin: left;
     font-weight: 900;
-    transform: rotate( 290deg);
-    left: 100px;
+    transform: rotate( 270deg);
+    left: 120px;
     margin-bottom: 90px;
 }
 td.minutes, td.hours, td.days, td.seconds {
