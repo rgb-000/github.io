@@ -8,6 +8,24 @@ pre {
     line-height: 0px;
 }
 
+.time {
+    font-size: 26px;
+    width: 200px
+}
+
+
+table#nextlaunch {
+    table-layout: fixed;
+    width: 200px !important;
+    text-align: left;
+    position: absolute;
+    top: 180px !important;
+}
+}
+td.minutes, td.hours, td.days, td.seconds{
+    width: 40px!important;
+}
+
 html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -53,7 +71,7 @@ p {
 
 @media all and (orientation: portrait) {
     body {
-        font-size: 28px;
+        font-size: 24px;
         padding: 0 0em;
     }
 }
