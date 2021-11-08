@@ -67,7 +67,7 @@
 })(jQuery);
 
 $(document).ready(function () {
-	$('table#nextlaunch.time').countdown({ date: '8 Nov 2021 20:00:00 UTC' }, function () {
+	$('table#nextlaunch.time').countdown({ date: '11 Nov 2021 20:00:00 UTC' }, function () {
 		var tbl = $('table#nextlaunch.time');
 		tbl.find('.days').text('0');
 		tbl.find('.hours').text('0');
