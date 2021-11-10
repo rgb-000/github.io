@@ -172,7 +172,21 @@ p {
     background: #000001;
 }
 
-.blog {
+.bbutton {
+    position: relative;
+    height: 36px;
+    width: 100%;
+    border-bottom: 3px solid cyan;
+    font-size: 14px;
+    letter-spacing:0.3px;
+    text-decoration:none;
+    padding: 3px;
+    text-align: center;
+    transform-origin: left;
+    margin-right: 160px;
+    margin-bottom: 20px;
+}
+    .blog {
     background-color: #000001;
     max-width: 1200px;
     display: grid;
@@ -228,10 +242,16 @@ p {
 @media all and (orientation: portrait) {
     .mob {
         display: normal;
+        font-size: 1.6em;
+        font-family: "Playfair Display",serif;
+        font-style: italic;
     }
 
     .desk {
         display: none;
+        font-size: 1.6em;
+        font-family: "Playfair Display",serif;
+        font-style: italic;
     }
 }
 
@@ -239,10 +259,16 @@ p {
 @media all and (orientation:landscape) {
     .mob {
         display: none;
+        font-size: 1.6em;
+        font-family: "Playfair Display",serif;
+        font-style: italic;
     }
 
     .desk {
         display: normal;
+        font-size: 1.6em;
+        font-family: "Playfair Display",serif;
+        font-style: italic;
     }
 }
 
