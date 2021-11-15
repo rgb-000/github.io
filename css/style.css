@@ -54,6 +54,18 @@ pre {
     padding-left:20px;
 }
 
+
+@media all and (orientation: portrait) {
+    .archive ul {
+        -moz-column-count: 8;
+        -moz-column-gap: 10px;
+        -webkit-column-count: 8;
+        -webkit-column-gap: 10px;
+        column-gap: 10px;
+        padding-left: 20px;
+    }
+}
+
 .archive li, a {
     list-style-type: none;
     text-decoration:none !important;
