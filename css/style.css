@@ -61,6 +61,7 @@ pre {
         -moz-column-gap: 10px;
         -webkit-column-count: 8;
         -webkit-column-gap: 10px;
+        line-height:2em;
         column-gap: 10px;
         padding-left: 20px;
     }
