@@ -1,0 +1,69 @@
+{
+  "name": "Solsunsets #341",
+  "symbol": "SSUNS",
+  "seller_fee_basis_points": "400",
+  "description": "Sunset retrowave landscapes on Solana",
+  "image": "image.png",
+  "edition": "Summer of 1988",
+  "external_url": "https://solsunsets.com",
+  "collection": {
+    "name": "Solsunsets",
+    "family": "Solsunsets"
+  },
+  "attributes": [
+    {
+      "trait_type": "sky",
+      "value": "cyan"
+    },
+    {
+      "trait_type": "sun",
+      "value": "normal warm"
+    },
+    {
+      "trait_type": "clouds",
+      "value": "none"
+    },
+    {
+      "trait_type": "horizon",
+      "value": "jungle hills"
+    },
+    {
+      "trait_type": "midground",
+      "value": "big river"
+    },
+    {
+      "trait_type": "far object",
+      "value": "tower"
+    },
+    {
+      "trait_type": "foreground",
+      "value": "prairie"
+    },
+    {
+      "trait_type": "near object",
+      "value": "owl"
+    }
+  ],
+  "properties": {
+    "creators": [
+      {
+        "address": "qoQHzaee7FzdivXk4KDjdrAVQwYGFXpDvhdZfrGHqUk",
+        "share": 50
+      },
+      {
+        "address": "5Mvb4RGM3uQKbkSYF2EdeaD4yvMQFD6uuyM8M8u5Do9R",
+        "share": 50
+      }
+    ],
+    "files": [
+      {
+        "uri": "341.png",
+        "type": "image/png"
+      },
+      {
+        "uri": "341h.png",
+        "type": "image/png"
+      }
+    ]
+  }
+}
