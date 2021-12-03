@@ -225,18 +225,19 @@ p {
 
 .bbutton {
     position: relative;
-    height: 36px;
+    height: 32px;
     width: 100%;
     border-bottom: 3px solid cyan;
     font-size: 16px;
-    letter-spacing:0.3px;
-    text-decoration:none;
+    letter-spacing: 0.3px;
+    text-decoration: none;
     padding: 3px;
-    font-weight:700;
+    font-weight: 700;
     text-align: center;
     transform-origin: left;
     margin-right: 160px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    line-height: 12px;
 }
     .blog {
     background-color: #000001;
@@ -565,7 +566,7 @@ img {
     display: flex;
     flex-direction: column;
     /*-ms-scroll-snap-type: y mandatory;*/
-    scroll-snap-type: y mandatory;
+    scroll-snap-type:y proximity;
     border-right: 3px solid cyan;
 }
 
@@ -574,7 +575,7 @@ img {
     .blog-header-container > * {
         flex-shrink: 0;
         min-height: 100%;
-        scroll-snap-align: start;
+        /*scroll-snap-align: start;*/
     }
 
     .blog-header-container .blog-article:not(.header-article) {
