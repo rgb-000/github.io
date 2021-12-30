@@ -11,7 +11,6 @@ $(function () {
     $("#menu").load("menudesk.html");
 });
 
-
 $(function () {
     interval();
     // get children

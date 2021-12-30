@@ -331,6 +331,7 @@ a:hover {
 
 .blog-right-page-content {
     margin-top: 8px;
+    pointer-events: none;
 }
 
 
@@ -345,9 +346,9 @@ a:hover {
 
 
 ::-webkit-scrollbar {
-    display: none;
-}
 
+display:none;
+}
 
 
 a {
@@ -820,7 +821,7 @@ a {
     flex-wrap: nowrap;
     align-content: flex-end;
     align-items: stretch;
-    white-space: break-spaces;
+    white-space:normal;
 }
 
 li.nav-item:first-child {
@@ -837,4 +838,5 @@ li.nav-item.last {
     justify-content: space-between;
     padding-left: 16vw;
 }
-}
+
+
