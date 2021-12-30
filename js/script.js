@@ -5,11 +5,11 @@
 
 
 $(function () {
-    $("#menumob").load("https://solsunsets.com/menumob.html");
+    $("#menumob").load("menumob.html");
 });
 
 $(function () {
-    $("#menu").load("https://solsunsets.com/menudesk.html");
+    $("#menu").load("menudesk.html");
 });
 
 
