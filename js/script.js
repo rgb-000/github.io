@@ -1,4 +1,18 @@
-﻿$(function () {
+﻿$(function () {$('.navbar-btn').on('click', function () {
+    $('.navbar-inner').toggleClass('in');
+});
+});
+
+$(function () {
+    $("#menumob").load("menumob.html");
+});
+
+$(function () {
+    $("#menu").load("menudesk.html");
+});
+
+
+$(function () {
     interval();
     // get children
     var imgs = $(".items").children();
