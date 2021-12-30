@@ -3,6 +3,16 @@
 });
 });
 
+
+$(function () {
+    $("#menumob").load("https://solsunsets.com/menumob.html");
+});
+
+$(function () {
+    $("#menu").load("https://solsunsets.com/menudesk.html");
+});
+
+
 $(function () {
     interval();
     // get children
