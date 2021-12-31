@@ -156,6 +156,7 @@ body {
     height: 240px;
     align-content: space-between;
     flex-wrap: wrap;
+    overflow-y: scroll;
     justify-content: flex-end;
 }
 
