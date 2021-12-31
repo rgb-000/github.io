@@ -676,6 +676,7 @@ a {
     .blog-intro {
         height: auto;
         padding-bottom: 2vh;
+        overflow-y:scroll;
     }
 
     .blog-right {
