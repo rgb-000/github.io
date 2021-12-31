@@ -545,7 +545,7 @@ a {
 
 .myimg img {
     display: block;
-    max-width: 52vw;
+    max-width: 41vw;
     filter: drop-shadow(2px 4px 6px #ddd6c5) sepia(0.5) opacity(0.9) brightness(1.07);
     border: 12px solid white;
 }
@@ -568,9 +568,10 @@ a {
 
     .load_banner_name {
         display: grid;
-        grid-template-columns: 57% 42%;
+        grid-template-columns: 50% 25%;
         margin-top: 50px;
         align-items: center;
+        margin-left: 11.8vw;
     }
 }
 
