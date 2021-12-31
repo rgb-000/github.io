@@ -43,7 +43,8 @@ body {
 .sfooter {
     position: fixed;
     bottom: 0;
-    padding-top:10px;
+    padding-top:8px;
+    padding-bottom:8px;
     background-color: #fff9ea;
     display: inline-flex;
     align-items: center;
@@ -52,7 +53,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100vw;
-    height: 3vh;
+    height: 4vh;
     line-height: 1vh;
 }
 
