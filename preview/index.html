@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Solsunsets is an Art Collection of 4,444 generative landscapes running on the Solana chain inspired by the aesthetics of popular culture, nostalgic childhood memories, obsolete technologies and jazz fusion music from the 1980s.">
+    <meta name="keywords" content="NFT, Solana, Solsunsets">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="../js/script.js"></script>
+    <link rel="icon" href="https://ipfs.io/ipfs/QmaoRtaJrJgXTTyqPDyVcT4penKESWzfXtjKGM71YPx4u1?ext=png" sizes="any" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Playfair+Display:ital,wght@1,400;1,700&&family=Source+Sans+Pro:wght@400;600;700;900&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+   
+</head>
+<body><p class="sp-input"></p>
+<p class="sp-input">Enter any Solsunset # below to check how it will look before/after the <i>Sunny Pack</i> upgrade.</p>
+    <input class="sp-input" max="4444" min="1" id="mySelect" type="number" placeholder="Solsunset #" onchange="myFunction()">
+        <div class="preview">
+        <p id="og"></p>
+        <p id="sp"></p>
+    </div>
+    
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mySelect").value;
+            document.getElementById("og").innerHTML = '<img src="../pfp/og/' + x + '.png">';
+            document.getElementById("sp").innerHTML = '<img src="../pfp/' + x + '.png">';
+        }
+    </script>
+</body>
+</html>
