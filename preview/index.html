@@ -13,23 +13,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Playfair+Display:ital,wght@1,400;1,700&&family=Source+Sans+Pro:wght@400;600;700;900&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-   
+
 </head>
-<body><p class="sp-input"></p>
-<p class="sp-input">Enter any Solsunset # below to check how it will look before/after the <i>Sunny Pack</i> upgrade.</p>
-    <input class="sp-input" max="4444" min="1" id="mySelect" type="number" placeholder="Solsunset #" onchange="myFunction()">
-        <div class="preview">
+<body>
+    <div class="preview" style="margin-top:30px;">
+        <h1>The Sunny Pack</h1>
+        <p style="margin-left:40px;">Enter any Solsunset # below to compare how it looks before <n id="bf"></n> and after <n id="af"></n> the <i>Sunny Pack</i> upgrade.</p>
+    </div>
+    <div class="preview">
+        <input class="prnpt" max="4444" min="1" id="mySelect" type="number" placeholder="Solsunset #" onchange="myFunction()">
+        <section title=".slideThree">
+            <!-- .slideThree -->
+            <div class="cbx">
+                <input type="checkbox" class="cbx" value="None" id="cbx" name="check" unchecked onchange="myFunction()"/>
+                <label for="cbx"></label>
+            </div>
+            <!-- end .slideThree -->
+        </section>
+    </div>
+    <div id="spimg">
         <p id="og"></p>
         <p id="sp"></p>
     </div>
-    
+
 
     <script>
+        function rndm() {
+            var min = 1;
+            var max = 4444;
+            var num = Math.floor(Math.random() * (max - min + 1)) + min;
+            document.getElementById('mySelect').value = num;
+        }
+       
+  
         function myFunction() {
             var x = document.getElementById("mySelect").value;
-            document.getElementById("og").innerHTML = '<img src="../pfp/og/' + x + '.png">';
-            document.getElementById("sp").innerHTML = '<img src="../pfp/' + x + '.png">';
+            if ($('input.cbx').is(':checked')) {
+                var element = document.getElementById("spimg");
+                element.classList.add("spb");
+                element.classList.remove("spp");
+                var el = document.getElementById("bf");
+                el.classList.add("bf3");
+                el.classList.remove("bf1");
+                var e = document.getElementById("af");
+                e.classList.add("af3");
+                e.classList.remove("af1");
+                document.getElementById("og").innerHTML = '<img id="ogb" src="../banner/og/' + x + '.png"> <p class="bfr"></p>';
+                document.getElementById("sp").innerHTML = '<img id="spb" src="../banner/' + x + '.png"> <p class="aft"></p>';
+
+            } else {
+                var element = document.getElementById("spimg");
+                element.classList.add("spp");
+                element.classList.remove("spb");
+                var el = document.getElementById("bf");
+                el.classList.add("bf1");
+                el.classList.remove("bf3");
+                var e = document.getElementById("af");
+                e.classList.add("af1");
+                e.classList.remove("af3");
+                document.getElementById("og").innerHTML = '<img src="../pfp/og/' + x + '.png"> <p class="bfr"></p>';
+                document.getElementById("sp").innerHTML = '<img src="../pfp/' + x + '.png"> <p class="aft"></p>';
+
+            }
+
+         
         }
+        function start() {
+            rndm();
+            myFunction();
+        }
+        window.onload = start;
+
     </script>
 </body>
 </html>

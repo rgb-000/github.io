@@ -823,23 +823,31 @@ li.nav-item.last {
 }
 
 
-.sp-input {
-    width: 360px;
+.preview {
+    width: 380px;
+    margin: 0px auto;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items:center;
+}
+
+.prnpt {
+    width: 280px;
     margin: 20px auto;
     justify-content: center;
     font-size: 14px;
     text-align: center;
 }
 
-.preview {
+.spp, .spb {
     font-family: /*"Source Sans Pro",*/ "Roboto Mono", monospace, Helvetica, sans-serif;
-    width: 960px;
     margin: auto;
     font-size: 14px;
     text-align: center;
     line-height: 24px;
     display: inline-flex;
-    flex-direction: row;
     align-content: flex-start;
     justify-content: space-between;
     align-items: baseline;
@@ -847,16 +855,122 @@ li.nav-item.last {
     margin-top: calc(45vh - 384px);
 }
 
+
+.spp {
+    width: 960px;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: calc(45vh - 384px);
+}
+
+.spb {
+    font-family: /*"Source Sans Pro",*/ "Roboto Mono", monospace, Helvetica, sans-serif;
+    width: 1000px;
+    flex-direction: column;
+    margin-top: calc(35vh - 384px);
+}
+
 input#mySelect {
     background-color: transparent;
-    height: 36px;
+    height: 32px;
     color: black;
     border: 0 2px solid orange;
     border-radius:4px;
     border-color:darkorange;
 }
 
-.preview img {
+.spp img {
     width: 384px !important;
     height: 384px !important;
+
 }
+
+.spb img {
+    width: 1000px !important;
+    height: 334px !important;
+    margin-top:20px;
+}
+
+.bfr::before, .bfr {
+    color: gray;
+    font-size: 10px;
+    /*content: 'original';*/
+}
+.aft::before, .aft {
+    color: gray;
+    font-size: 10px;
+   /*content: 'sunny pack';*/
+}
+
+.bf3::before {
+    content: '(top)';
+}
+
+.af3::before {
+    content: '(bottom)';
+}
+
+.bf1::before {
+    content: '(left)';
+}
+
+.af1::before {
+    content: '(right)';
+}
+
+
+
+
+.cbx {
+    width: 74px;
+    height: 32px;
+    background: #ddbe58;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+    .cbx:after {
+        content: '1x1';
+        color: #fff9ea;
+        position: absolute;
+        right: 10px;
+        z-index: 0;
+        font: 12px/32px 'robot mono', sans-serif;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
+    }
+
+    .cbx:before {
+        content: '3x1';
+        color: #000000;
+        position: absolute;
+        left: 10px;
+        z-index: 0;
+        font: 12px/32px 'robot mono', sans-serif;
+        font-weight: bold;
+    }
+
+    .cbx label {
+        display: block;
+        width: 28px;
+        height: 26px;
+        cursor: pointer;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        z-index: 1;
+        background: #fff9ea;
+        border-radius: 4px;
+        transition: all 0.4s ease;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .cbx input[type=checkbox] {
+        visibility: hidden;
+    }
+
+        .cbx input[type=checkbox]:checked + label {
+            left: 43px;
+        }
