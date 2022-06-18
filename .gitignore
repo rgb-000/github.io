@@ -9,10 +9,14 @@ node_modules/
 # OS generated files
 .DS_Store
 .DS_Store?
+/.vs
 ._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.vs/*
+/.vs/*
 /.vscode
 /.vs/rgb-000.github.io/v17
+/.vs/rgb-000.github.io/.vs
