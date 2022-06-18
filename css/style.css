@@ -879,6 +879,11 @@ input#mySelect {
     border-color:darkorange;
 }
 
+    input#mySelect::-webkit-inner-spin-button {
+        min-width: 40px !important;
+        height:28px;
+    }
+
 .spp img {
     width: 384px !important;
     height: 384px !important;
