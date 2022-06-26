@@ -21,14 +21,12 @@
         <p style="margin-left:40px;">Enter any Solsunset # below to compare how it looks before <n id="bf"></n> and after <n id="af"></n> the <i>Sunny Pack</i> upgrade.</p>
     </div>
     <div class="preview">
-        <input class="prnpt" max="4444" min="1" id="mySelect" type="number" placeholder="Solsunset #" onchange="myFunction()">
+        <input class="prnpt" max="4444" min="1" id="mySelect" type="number" placeholder="Solsunset #" value="3333" onchange="myFunction()">
         <section title=".slideThree">
-            <!-- .slideThree -->
             <div class="cbx">
                 <input type="checkbox" class="cbx" value="None" id="cbx" name="check" checked onchange="myFunction()"/>
                 <label for="cbx"></label>
             </div>
-            <!-- end .slideThree -->
         </section>
     </div>
     <div id="spimg">
@@ -58,8 +56,8 @@
                 var e = document.getElementById("af");
                 e.classList.add("af3");
                 e.classList.remove("af1");
-                document.getElementById("og").innerHTML = '<img id="ogb" src="../banner/og/' + x + '.png"> <p class="bfr"></p>';
-                document.getElementById("sp").innerHTML = '<img id="spb" src="../banner/' + x + '.png"> <p class="aft"></p>';
+                document.getElementById("og").innerHTML = '<img id="ogb" src="../banner/og/' + x + '.png" onerror="imgError3x1(this);"> <p class="bfr"></p>';
+                document.getElementById("sp").innerHTML = '<img id="spb" src="../banner/' + x + '.png" onerror="imgError3x1(this);"> <p class="aft"></p>';
 
             } else {
                 var element = document.getElementById("spimg");
@@ -71,15 +69,29 @@
                 var e = document.getElementById("af");
                 e.classList.add("af1");
                 e.classList.remove("af3");
-                document.getElementById("og").innerHTML = '<img src="../pfp/og/' + x + '.png"> <p class="bfr"></p>';
-                document.getElementById("sp").innerHTML = '<img src="../pfp/' + x + '.png"> <p class="aft"></p>';
+                document.getElementById("og").innerHTML = '<img src="../pfp/og/' + x + '.png" onerror="imgError(this);"> <p class="bfr"></p>';
+                document.getElementById("sp").innerHTML = '<img src="../pfp/' + x + '.png" onerror="imgError(this);"> <p class="aft"></p>';
 
             }
 
          
         }
-        function start() {
-            rndm();
+
+
+        function imgError(image) {
+            image.onerror = "";
+            image.src = "../img/none.png";
+            return true;
+        }
+
+        function imgError3x1(image) {
+            image.onerror = "";
+            image.src = "../img/none-3x1.png";
+            return true;
+        }
+
+       function start() {
+           /*  rndm();*/
             myFunction();
         }
         window.onload = start;
